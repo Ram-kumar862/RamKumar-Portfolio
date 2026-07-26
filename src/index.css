@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #f8fafc;
+  --color-surface: #ffffff;
+  --color-indigo-deep: #2563eb;
+  --color-indigo: #1d4ed8;
+  --color-amber: #f59e0b;
+  --color-orange: #ea580c;
+}
+
+:root {
+  --ink: #f8fafc;
+  --surface: #ffffff;
+  --indigo-deep: #2563eb;
+  --indigo: #1d4ed8;
+  --amber: #f59e0b;
+  --orange: #ea580c;
+  --text: #0f172a;
+  --muted-text: #475569;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  text-rendering: optimizeLegibility;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-1deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(1deg);
+  }
+}
+.animate-float {
+  animation: float 5s var(--ease-out-expo) infinite;
+  will-change: transform;
+}
+@keyframes ambient-glow {
+  0%, 100% {
+    opacity: 0.18;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 0.38;
+    transform: scale(1.08);
+  }
+}
+.animate-pulse-slow {
+  animation: ambient-glow 9s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(28px) scale(0.985);
+  transition: opacity 700ms var(--ease-out-expo), transform 700ms var(--ease-out-expo);
+}
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.brand-gradient {
+  background-image: linear-gradient(115deg, var(--indigo-deep) 0%, var(--indigo) 48%, var(--amber) 100%);
+}
+
+.brand-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(64, 56, 139, 0.32);
+  transition: transform 260ms var(--ease-out-expo), box-shadow 260ms ease, filter 260ms ease;
+}
+.brand-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, transparent 30%, rgba(255, 192, 0, .36) 48%, transparent 66%);
+  transform: translateX(-130%);
+  transition: transform 550ms var(--ease-out-expo);
+}
+.brand-button:hover {
+  transform: translateY(-3px);
+  filter: saturate(1.12) brightness(1.06);
+  box-shadow: 0 18px 38px rgba(245, 138, 0, 0.2);
+}
+.brand-button:hover::after { transform: translateX(130%); }
+
+/* Apply the supplied palette to legacy Tailwind utilities throughout the site. */
+[class*="text-white"], [class*="text-gray-200"] { color: var(--text) !important; }
+[class*="text-gray"], [class*="text-slate"] { color: var(--muted-text) !important; }
+[class*="text-purple"], [class*="text-indigo"], [class*="text-[#a78bfa]"] { color: var(--indigo) !important; }
+[class*="hover:text-white"]:hover, [class*="hover:text-purple"]:hover { color: var(--amber) !important; }
+
+[class*="bg-[#080710]"], [class*="bg-[#0b1120]"], [class*="bg-[#0c0b1d]"], [class*="bg-[#0a0915]"], [class*="bg-[#0d0c1d]"], [class*="bg-[#0e0d1f]"], [class*="bg-[#121124]"] {
+  background-color: var(--surface) !important;
+}
+[class*="bg-white"] { background-color: color-mix(in srgb, var(--indigo) 6%, transparent) !important; }
+[class*="bg-black"] { background-color: color-mix(in srgb, #0f172a 70%, transparent) !important; }
+[class*="bg-purple"], [class*="bg-indigo"] { background-color: color-mix(in srgb, var(--indigo) 10%, transparent) !important; }
+[class*="hover:bg-white"]:hover { background-color: color-mix(in srgb, var(--indigo) 12%, transparent) !important; }
+
+[class*="border-white"], [class*="border-purple"], [class*="border-indigo"] { border-color: color-mix(in srgb, var(--indigo) 22%, transparent) !important; }
+[class*="hover:border-white"]:hover, [class*="hover:border-purple"]:hover, [class*="hover:border-indigo"]:hover { border-color: var(--orange) !important; }
+
+[class*="from-purple"], [class*="from-indigo"] { --tw-gradient-from: var(--indigo-deep) var(--tw-gradient-from-position) !important; }
+[class*="via-violet"] { --tw-gradient-via: var(--indigo) var(--tw-gradient-via-position) !important; }
+[class*="to-indigo"], [class*="to-purple"] { --tw-gradient-to: var(--amber) var(--tw-gradient-to-position) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}
