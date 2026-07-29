@@ -3,8 +3,8 @@ import { User, MapPin, Mail, GraduationCap } from 'lucide-react';
 export default function About() {
   const details = [
     { icon: <User className="text-purple-400" size={20} />, label: 'Name', value: 'Ram Kumar G' },
-    { icon: <MapPin className="text-purple-400" size={20} />, label: 'Location', value: 'Sivakasi, Tamil Nadu' },
-    { icon: <Mail className="text-purple-400" size={20} />, label: 'Email', value: 'ramkumar636852@gmail.com' },
+    { icon: <MapPin className="text-purple-400" size={20} />, label: 'Location', value: 'Tirunelveli, Tamil Nadu' },
+    { icon: <Mail className="text-purple-400" size={20} />, label: 'Email', value: 'ramkumar878269@gmail.com' },
     { icon: <GraduationCap className="text-purple-400" size={20} />, label: 'Education', value: 'MCA Student' }
   ];
   return (

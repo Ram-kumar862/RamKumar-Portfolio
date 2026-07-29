@@ -7,15 +7,15 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'RPS Photo Studio',
+      title: 'Online Furniture Shop',
       category: 'MERN Stack',
-      tags: ['React', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB'],
-      description: 'A photographer booking platform where users can browse photographers, view packages, book photography services, manage bookings, and enjoy a secure authentication system.',
+      tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+      description: 'A online furniture booking platform where users can browse , view product, book Furniture services, manage bookings, and enjoy a secure authentication system.',
       image: 'linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%)',
-      // img:proj1,
+      img:'n',
       caseStudy: {
-        problem: 'Local photography businesses struggle with manual package selections, messy schedules, and payment/booking tracking over phones.',
-        solution: 'Built a full-stack platform that showcases galleries, tracks packages, manages booking schedules automatically, and integrates secure user auth dashboards.',
+        problem: 'Local furniture businesses struggle with manual product selections, messy schedules, and payment/booking tracking over phones.',
+        solution: 'Built a full-stack platform that showcases galleries, tracks product, manages booking schedules automatically, and integrates secure user auth dashboards.',
         features: ['Browse Freelancers & Package Options', 'Secure JWT-based Authentication', 'Real-time Booking Scheduler', 'Admin Management Panel'],
         techStack: ['React', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap']
       },
@@ -35,25 +35,24 @@ export default function Projects() {
         features: ['Tailwind v4 Styling Architecture', 'Dynamic Project Case Studies', 'Contact Form Input Validations', 'Fluid Layout Adaptations'],
         techStack: ['React', 'Tailwind CSS', 'Lucide React', 'Vite']
       },
-      link:'https://pandiselvan.netlify.app/',
+      link:'http://localhost:5173/',
     },
     {
   id: 3,
-  title: "Laptop Shop Sales and Service Management System",
+  title: "Agro Sales and Stock Management System",
   category: "Web Application",
   tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   description:
-    "A web-based laptop shop management system designed to manage laptop sales, repair services, customer records, inventory, and billing operations efficiently.",
+    "A web-based agro sales and stock management system designed to manage Agro sales, customer records, inventory, and billing operations efficiently.",
   image: "linear-gradient(135deg, #d946ef 0%, #c084fc 100%)",
   //img:proj3,
   caseStudy: {
     problem:
-      "Managing laptop sales, repair requests, inventory, and customer information manually can lead to errors, delays, and inefficient business operations.",
+      "Agro sales and stock management, product requests, inventory, and customer information manually can lead to errors, delays, and inefficient  operations.",
     solution:
-      "Developed a centralized web application that streamlines laptop sales, service tracking, inventory management, customer records, and billing processes through an easy-to-use interface.",
+      "Developed a centralized web application that streamlines  sales, inventory management, customer records, and billing processes through an easy-to-use interface.",
     features: [
-      "Laptop Sales Management",
-      "Service & Repair Request Tracking",
+      "Agro Sales and Stock Management",
       "Customer Management System",
       "Inventory & Stock Management",
       "Billing and Invoice Generation",

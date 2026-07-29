@@ -14,13 +14,13 @@ export default function Contact() {
     {
       icon: <Phone size={22} />,
       label: 'Call me',
-      value: '+91 77081 47489',
-      href: 'tel:+917708147489'
+      value: '+91 9345029468',
+      href: 'tel:+919345029468'
     },
     {
       icon: <MapPin size={22} />,
       label: 'Location',
-      value: 'Sivakasi, Tamil Nadu',
+      value: 'Tirunelveli, Tamil Nadu',
       href: null
     }
   ];
@@ -66,9 +66,9 @@ export default function Contact() {
             </p>
           </div>
           <div className="flex items-center gap-6 justify-center flex-wrap">
-            <a href="https://github.com/pandiselvan2k05" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">GitHub</a>
-            <a href="https://www.linkedin.com/in/pandiselvan-r-8b093b274/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LinkedIn</a>
-            <a href="https://leetcode.com/u/HlBvs9RkFU/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LeetCode</a>
+            <a href="https://github.com/Ram-kumar862/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">GitHub</a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LinkedIn</a>
+            <a href="https://leetcode.com/u/ram-kumar862/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LeetCode</a>
           </div>
           <button 
             onClick={scrollToTop}

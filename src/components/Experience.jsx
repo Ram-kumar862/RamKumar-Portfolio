@@ -24,21 +24,8 @@ export default function Experience() {
     },
 
     {
-      degree: "Post Graduate Diploma in Artificial Intelligence & Machine Learning (PGD AI & ML)",
-      institution: "Ayya Nadar Janaki Ammal College",
-      details:
-        "Focused on AI/ML fundamentals, data preprocessing, model building, Python programming, and real-world machine learning applications."
-    },
-
-    {
-      degree: "Certificate Course in Mobile Application Development",
-      institution: "Ayya Nadar Janaki Ammal College",
-      details:
-        "Learned mobile app development concepts, UI design principles, and basic application building for Android platforms."
-    },
-    {
-      degree: "Bachelor of Commerce and Computer Applications (B.Com CA)",
-      institution: "Ayya Nadar Janaki Ammal College",
+      degree: "Bachelor of Computer Applications(BCA) ",
+      institution: "N.M.S.S.Vellaichamy Nadar College",
       details: "Focused on Computer Applications, Web Development, Database Management, and Software Technologies. Participated in technical events and projects."
     }
   ];
