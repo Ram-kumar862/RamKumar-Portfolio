@@ -19,7 +19,7 @@ export default function Projects() {
         features: ['Browse Freelancers & Package Options', 'Secure JWT-based Authentication', 'Real-time Booking Scheduler', 'Admin Management Panel'],
         techStack: ['React', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap']
       },
-      link:'https://rpsphotostudio.netlify.app/'
+      link:'https://online-furnitures.netlify.app/'
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export default function Projects() {
         features: ['Tailwind v4 Styling Architecture', 'Dynamic Project Case Studies', 'Contact Form Input Validations', 'Fluid Layout Adaptations'],
         techStack: ['React', 'Tailwind CSS', 'Lucide React', 'Vite']
       },
-      link:'http://localhost:5173/',
+      link:'https://ramkumar-g.netlify.app/',
     },
     {
   id: 3,
