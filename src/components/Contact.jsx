@@ -66,8 +66,8 @@ export default function Contact() {
             </p>
           </div>
           <div className="flex items-center gap-6 justify-center flex-wrap">
-            <a href="https://github.com/Ram-kumar862/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">GitHub</a>
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LinkedIn</a>
+            <a href='https://github.com/Ram-kumar862/' target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">GitHub</a>
+            <a href="https://www.linkedin.com/in/ram-kumarg/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LinkedIn</a>
             <a href="https://leetcode.com/u/ram-kumar862/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-wider">LeetCode</a>
           </div>
           <button 

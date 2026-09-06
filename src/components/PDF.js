@@ -1,6 +1,6 @@
 export const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/New Pandiselvan_CV.pdf";
-    link.download = "Pandiselvan_cv.pdf";
+    link.href = "/RamKumar.pdf";
+    link.download = "RamKumar_CV.pdf";
     link.click();
   };

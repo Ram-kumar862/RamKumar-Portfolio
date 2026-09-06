@@ -215,6 +215,7 @@ export default function Projects() {
                 >
                   Close
                 </button>
+                {!!selectedProject.link ?
                 <a 
                   href={selectedProject.link}
                   target="_blank"
@@ -224,7 +225,10 @@ export default function Projects() {
                 >
                   Live Demo
                   <ExternalLink size={14} />
-                </a>
+                </a> : 
+                <></>
+                }
+                
               </div>
             </div>
           </div>
