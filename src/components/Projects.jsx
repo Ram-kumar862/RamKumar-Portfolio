@@ -4,6 +4,12 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
   const filters = ['All', 'MERN Stack', 'React', 'PHP'];
+
+  const handleImageError = (event) => {
+    event.currentTarget.onerror = null;
+    event.currentTarget.src = '/logo.png';
+  };
+
   const projects = [
     {
       id: 1,
@@ -28,7 +34,7 @@ export default function Projects() {
       tags: ['React', 'Tailwind CSS', 'Responsive UI'],
       description: 'A personal portfolio showcasing skills, projects, and achievements. Fully responsive and styled using glassmorphic cards.',
       image: 'linear-gradient(135deg, #a855f7 0%, #6366f1 100%)',
-      img:logo.png,
+      img:'logo.png',
       caseStudy: {
         problem: 'Need an interactive, fast, and visually spectacular portfolio to represent skills, credentials, and achievements to recruiters.',
         solution: 'Developed a high-performance single-page app utilizing Tailwind CSS v4 for clean gradients, glassmorphism, responsive menus, and custom modals.',
@@ -38,42 +44,42 @@ export default function Projects() {
       link:'https://ramkumar-g.netlify.app/',
     },
     {
-  id: 3,
-  title: "Agro Sales and Stock Management System",
-  category: "Web Application",
-  tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  description:
-    "A web-based agro sales and stock management system designed to manage Agro sales, customer records, inventory, and billing operations efficiently.",
-  image: "linear-gradient(135deg, #d946ef 0%, #c084fc 100%)",
-  img:agro.jpeg,
-  caseStudy: {
-    problem:
-      "Agro sales and stock management, product requests, inventory, and customer information manually can lead to errors, delays, and inefficient  operations.",
-    solution:
-      "Developed a centralized web application that streamlines  sales, inventory management, customer records, and billing processes through an easy-to-use interface.",
-    features: [
-      "Agro Sales and Stock Management",
-      "Customer Management System",
-      "Inventory & Stock Management",
-      "Billing and Invoice Generation",
-      "Admin Dashboard",
-      "Product Search & Filtering",
-      "Sales and Service Reports"
-    ],
-    techStack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "PHP",
-      "MySQL"
-    ],
-    systemDesign: {
-      frontend: ["HTML", "CSS", "JavaScript"],
-      backend: ["PHP"],
-      database: ["MySQL"]
+      id: 3,
+      title: "Agro Sales and Stock Management System",
+      category: "Web Application",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      description:
+        "A web-based agro sales and stock management system designed to manage Agro sales, customer records, inventory, and billing operations efficiently.",
+      image: "linear-gradient(135deg, #d946ef 0%, #c084fc 100%)",
+      img:'agro.jpeg',
+      caseStudy: {
+        problem:
+          "Agro sales and stock management, product requests, inventory, and customer information manually can lead to errors, delays, and inefficient  operations.",
+        solution:
+          "Developed a centralized web application that streamlines  sales, inventory management, customer records, and billing processes through an easy-to-use interface.",
+        features: [
+          "Agro Sales and Stock Management",
+          "Customer Management System",
+          "Inventory & Stock Management",
+          "Billing and Invoice Generation",
+          "Admin Dashboard",
+          "Product Search & Filtering",
+          "Sales and Service Reports"
+        ],
+        techStack: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "MySQL"
+        ],
+        systemDesign: {
+          frontend: ["HTML", "CSS", "JavaScript"],
+          backend: ["PHP"],
+          database: ["MySQL"]
+        }
+      }
     }
-  }
-}
   ];
   const filteredProjects = activeFilter === 'All'
     ? projects
@@ -115,7 +121,12 @@ export default function Projects() {
                 style={{ background: project.image }}
               >
                 <div className="absolute inset-0 bg-black/10 opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
-                 {/* //<img src={project.img} alt={project.title} /> */}
+                <img
+                  src={`/${project.img}`}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  onError={handleImageError}
+                />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div className="space-y-3">
@@ -156,7 +167,13 @@ export default function Projects() {
               className="w-full h-48 sm:h-56 relative flex items-center justify-center p-8"
               style={{ background: selectedProject.image }}
             >
-              <button 
+              <img
+                src={`/${selectedProject.img}`}
+                alt={selectedProject.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50"></div>
+              <button
                 onClick={() => setSelectedProject(null)}
                 className="absolute top-4 right-4 p-2 rounded-full bg-black/40 hover:bg-black/60 text-white transition-colors"
                 aria-label="Close Modal"
