@@ -12,7 +12,7 @@ export default function Projects() {
       tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
       description: 'A online furniture booking platform where users can browse , view product, book Furniture services, manage bookings, and enjoy a secure authentication system.',
       image: 'linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%)',
-      img:'n',
+      img:'home.png',
       caseStudy: {
         problem: 'Local furniture businesses struggle with manual product selections, messy schedules, and payment/booking tracking over phones.',
         solution: 'Built a full-stack platform that showcases galleries, tracks product, manages booking schedules automatically, and integrates secure user auth dashboards.',
@@ -28,7 +28,7 @@ export default function Projects() {
       tags: ['React', 'Tailwind CSS', 'Responsive UI'],
       description: 'A personal portfolio showcasing skills, projects, and achievements. Fully responsive and styled using glassmorphic cards.',
       image: 'linear-gradient(135deg, #a855f7 0%, #6366f1 100%)',
-      //img:proj2,
+      img:logo.png,
       caseStudy: {
         problem: 'Need an interactive, fast, and visually spectacular portfolio to represent skills, credentials, and achievements to recruiters.',
         solution: 'Developed a high-performance single-page app utilizing Tailwind CSS v4 for clean gradients, glassmorphism, responsive menus, and custom modals.',
@@ -45,7 +45,7 @@ export default function Projects() {
   description:
     "A web-based agro sales and stock management system designed to manage Agro sales, customer records, inventory, and billing operations efficiently.",
   image: "linear-gradient(135deg, #d946ef 0%, #c084fc 100%)",
-  //img:proj3,
+  img:agro.jpeg,
   caseStudy: {
     problem:
       "Agro sales and stock management, product requests, inventory, and customer information manually can lead to errors, delays, and inefficient  operations.",
