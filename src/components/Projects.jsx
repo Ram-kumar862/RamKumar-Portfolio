@@ -95,8 +95,8 @@ export default function Projects() {
                 onClick={() => setActiveFilter(filter)}
                 className={`px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-300 ${
                   activeFilter === filter
-                    ? 'bg-gradient-to-r from-purple-600 to-indigo-600 border-transparent text-white shadow-lg shadow-purple-500/20'
-                    : 'bg-white/[0.02] border-white/5 text-gray-400 hover:text-white hover:bg-white/[0.05] hover:border-white/10'
+                    ? 'bg-linear-to-r from-purple-600 to-indigo-600 border-transparent text-white shadow-lg shadow-purple-500/20'
+                    : 'bg-white/2 border-white/5 text-gray-400 hover:text-white hover:bg-white/5 hover:border-white/10'
                 }`}
               >
                 {filter}
@@ -111,7 +111,7 @@ export default function Projects() {
               className="flex flex-col rounded-3xl bg-[#121124]/40 border border-white/5 overflow-hidden hover:border-purple-500/20 hover:shadow-2xl hover:shadow-purple-500/5 transition-all duration-300 group"
             >
               <div 
-                className="w-full aspect-[16/10] flex items-center justify-center p-8 relative overflow-hidden transition-all duration-300"
+                className="w-full aspect-16/10 flex items-center justify-center p-8 relative overflow-hidden transition-all duration-300"
                 style={{ background: project.image }}
               >
                 <div className="absolute inset-0 bg-black/10 opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
@@ -221,7 +221,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setSelectedProject(null)}
-                  className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold shadow-lg shadow-purple-500/20 text-sm"
+                  className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-linear-to-r from-purple-600 to-indigo-600 text-white font-semibold shadow-lg shadow-purple-500/20 text-sm"
                 >
                   Live Demo
                   <ExternalLink size={14} />

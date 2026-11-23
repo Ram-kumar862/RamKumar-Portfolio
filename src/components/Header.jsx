@@ -43,7 +43,7 @@ export default function Header() {
     <>
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-[#f8fafc]/90 backdrop-blur-md border-b border-white/5 py-4' 
+          ? 'bg-ink/90 backdrop-blur-md border-b border-white/5 py-4' 
           : 'bg-transparent py-6'
       }`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center relative z-50">
@@ -79,7 +79,7 @@ export default function Header() {
           </button>
         </div>
       </header>
-      <div className={`lg:hidden fixed inset-0 z-40 bg-[#f8fafc]/98 backdrop-blur-xl transition-all duration-300 overflow-y-auto ${
+      <div className={`lg:hidden fixed inset-0 z-40 bg-ink/98 backdrop-blur-xl transition-all duration-300 overflow-y-auto ${
         isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
       }`}>
         <nav className="flex flex-col p-8 pt-28 pb-10 gap-6">

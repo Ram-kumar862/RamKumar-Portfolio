@@ -31,7 +31,7 @@ export default function Experience() {
   ];
   return (
     <section id="experience" className="py-24 bg-[#0a0915] relative overflow-hidden">
-      <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-purple-600/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 space-y-16">
         <div className="text-center space-y-3">
           <span className="text-xs uppercase tracking-widest text-[#a78bfa] font-bold">My Journey</span>
@@ -47,10 +47,10 @@ export default function Experience() {
               </div>
               <h3 className="text-2xl font-bold text-white tracking-tight">Education</h3>
             </div>
-            <div className="space-y-6 relative before:absolute before:top-2 before:bottom-2 before:left-[13px] sm:before:left-[17px] before:w-[2px] ">
+            <div className="space-y-6 relative before:absolute before:top-2 before:bottom-2 before:left-3.25 sm:before:left-4.25 before:w-0.5 ">
               {educations.map((edu, idx) => (
                 <div key={idx} className="relative pl-8 sm:pl-12 group">
-                  <div className="absolute left-1.5 sm:left-2.5 top-2 w-[16px] h-[16px] rounded-full border-2 border-[#8b5cf6] bg-[#0a0915] z-10 group-hover:scale-125 transition-transform duration-300"></div>
+                  <div className="absolute left-1.5 sm:left-2.5 top-2 w-4 h-4 rounded-full border-2 border-[#8b5cf6] bg-[#0a0915] z-10 group-hover:scale-125 transition-transform duration-300"></div>
                   <div className="p-5 sm:p-6 rounded-2xl bg-[#121124]/40 border border-white/5 hover:border-purple-500/10 hover:bg-[#121124]/60 transition-all duration-300 space-y-2">
                     <h4 className="text-base sm:text-lg font-bold text-white group-hover:text-purple-400 transition-colors">
                       {edu.degree}
@@ -73,10 +73,10 @@ export default function Experience() {
               </div>
               <h3 className="text-2xl font-bold text-white tracking-tight">Experience</h3>
             </div>
-            <div className="space-y-6 relative before:absolute before:top-2 before:bottom-2 before:left-[13px] sm:before:left-[17px] before:w-[2px] ">
+            <div className="space-y-6 relative before:absolute before:top-2 before:bottom-2 before:left-3.25 sm:before:left-4.25 before:w-0.5 ">
               {experiences.map((exp, idx) => (
                 <div key={idx} className="relative pl-8 sm:pl-12 group">
-                  <div className="absolute left-1.5 sm:left-2.5 top-2 w-[16px] h-[16px] rounded-full border-2 border-indigo-500 bg-[#0a0915] z-10 group-hover:scale-125 transition-transform duration-300"></div>
+                  <div className="absolute left-1.5 sm:left-2.5 top-2 w-4 h-4 rounded-full border-2 border-indigo-500 bg-[#0a0915] z-10 group-hover:scale-125 transition-transform duration-300"></div>
                   <div className="p-5 sm:p-6 rounded-2xl bg-[#121124]/40 border border-white/5 hover:border-indigo-500/10 hover:bg-[#121124]/60 transition-all duration-300 space-y-4">
                     <div className="space-y-1">
                       <h4 className="text-base sm:text-lg font-bold text-white group-hover:text-purple-400 transition-colors">
